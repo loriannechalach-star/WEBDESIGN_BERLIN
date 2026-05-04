@@ -5,11 +5,8 @@ Our website is a university project that focuses on data visualization, centerin
 This website constitutes a work of the mind within the meaning of the Intellectual Property Code and will remain within the context of university projects: no media will be used for commercial purposes.
 
 # Contributors
-Alexandre Rodriguez: Front-end developper and web editor
-
-Alina Zhyla: Back-end developper and web-designer
-
-Loana Chalach: project manager and back-end developper
+Loriane Chalach
+Lucas Damour
 
 # Link of the website
 https://loaxn.github.io/Overdose-Watch/
