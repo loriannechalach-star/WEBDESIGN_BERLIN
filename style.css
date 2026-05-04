@@ -1,0 +1,715 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+  --Lerouge: #9D1815;
+}
+body{
+  background: #EBF3F3;
+  margin: 0;
+  height: 100vh; /*This centers vertically within the viewport*/
+  margin: 0; /* Remove default margin to center horizontally */
+  font-family: 'Odibee Sans', sans-serif;
+  }
+
+  /* ALEX  */
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #488693;
+    background-image: url(img/fog3.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .header { 
+   text-align: center; 
+   z-index: 1;
+   height: fit-content;
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   max-height: 100%;
+  }
+  
+  .header p {
+    border-radius: 1.375rem;
+    background: rgba(9, 56, 68, 0.7);
+    backdrop-filter: blur(4.5px);
+    z-index: 1;
+    height: fit-content;
+    position: absolute;
+    color: #FFF;
+    font-size: 0.8rem;
+    line-height: normal;
+    font-family: "Poppins";
+  }
+  .text {
+    width: 28vw;
+    left: 30%;
+    top: 15%;
+    transform: translate(-50%, 50%);
+    padding: 1vw;
+    text-align: left;
+    padding-right: 8vw;
+  }
+  
+  .text2 {
+    width: 30vw;
+    right: 30%;
+    bottom: 10vw;
+    transform: translate(50%, 50%);
+    padding: 1vw;
+    text-align: right;
+    padding-left: 3vw;
+  }
+  .text1 {
+    z-index: 3;
+    width: 50vw;
+    max-width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+  }
+  
+  @media (max-width: 900px) {
+    .text {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text2 {
+      top: 50%;
+      transform: translate(50%, -50%);
+      padding-left: 8vw;
+    }
+    .text1 {
+      top: 0;
+    }
+  }
+  
+  .img-in1{
+  width: 100%;
+  }
+  
+  
+  .skeleton{
+    position: relative;
+    width: 60%;
+    max-width: 800px;
+    z-index: 2;
+  }
+  
+  .skeleton { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  } /* Code qui donne un effet de flottement à l'image */
+  
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); } 
+  }
+  
+  .pill{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    
+  }
+  
+  .pill2{
+    width: 22%;
+    position: absolute;
+bottom: 0;
+left: 0;
+  }
+  
+  .pill3{
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .pill4{
+    width: 13%;
+    position: absolute;
+    top: 1vw;
+    left: 20vw;
+  }
+  
+  .tes{
+    width: 15%;
+    position: absolute;
+    bottom: 10%;
+    left: 23%;
+  }
+  
+  .animation1 { 
+    animation-name: floating1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  } /* Code qui donne un effet de flottement à l'image */
+  
+  .animation2 { 
+    animation-name: floating2;
+    animation-duration: 2.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  } /* Code qui donne un effet de flottement à l'image */
+  
+  .animation3 { 
+    animation-name: floating3;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  } /* Code qui donne un effet de flottement à l'image */
+  
+  .animation4 { 
+    animation-name: floating4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  } /* Code qui donne un effet de flottement à l'image */
+  
+  .animation5 { 
+    animation-name: floating5;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); } 
+    
+  }
+  
+  @keyframes floating1 {
+    0% { transform: translate(0, 0px) rotate(25deg); }
+    50% { transform: translate(0, 60px) rotate(25deg); }
+    100% { transform: translate(0, -0px) rotate(25deg); } 
+  
+  }
+  
+  
+  @keyframes floating2 {
+    0% { transform: translate(0, 0px) rotate(-25deg); }
+    50% { transform: translate(0, 30px) rotate(-30deg); }
+    100% { transform: translate(0, -0px) rotate(-25deg); } 
+  }
+  
+  @keyframes floating3 {
+    0% { transform: translate(0, 0px) rotate(15deg); }
+    50% { transform: translate(0, 15px) rotate(15deg); }
+    100% { transform: translate(0, -0px) rotate(15deg); } 
+  }
+  
+  @keyframes floating4 {
+    0% { transform: translate(0, 0px) rotate(-50deg); }
+    50% { transform: translate(0, 70px) rotate(-50deg); }
+    100% { transform: translate(0, -0px) rotate(-50deg); } 
+  }
+  
+  @keyframes floating5 {
+    0% { transform: translate(0, 0px) rotate(0deg); }
+    50% { transform: translate(0, 70px) rotate(10deg); }
+    100% { transform: translate(0, -0px) rotate(0deg); } 
+  }
+  
+  .fog{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  left: 0;
+  }
+
+ .wrapper {
+    background-color: #EBF3F3;
+    text-align: center;
+  }
+  
+  .wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: #9D1815;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+  
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    max-width: 80%;
+    max-height: 90vh;
+    overflow: auto;
+    z-index: 1;
+  }
+  .modal p {
+    font-family: 'poppins', sans-serif;
+  }
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal__content {
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: fit-content;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 2em;
+  }
+  
+  .modal__footer {
+    text-align: right;
+  }
+  
+  .modal__footer a {
+    text-decoration: none;
+    color: #9D1815;
+    font-size: 2em;
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0e0e0e;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Poppins";
+  }
+  
+  h3{
+    font-size: 1.5rem;
+  }
+
+  span{
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+
+main {
+  width: 100%;
+}
+
+h2 {
+  color: var(--Lerouge);
+  font-size: 3rem;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+.section_carte {
+  width: 75%;
+  margin: auto;
+}
+.map_image svg {
+    width: 70%;
+      }
+
+.map{
+  margin-top: 0;
+  width: 100%;
+}
+
+.map h1{
+  color: #9D1815;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+.map_image{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  
+}
+.map_image path , polygon{
+  fill: #5797A0;
+  transition: fill 0.3s;
+  stroke-width: 0.5;
+}
+
+.map_image path:hover{
+  fill: #9D1815;
+  transition: fill 0.3s;
+  stroke:#9D1815 ;
+  
+}
+
+.map_image polygon:hover{
+  fill: #9D1815;
+  transition: fill 0.3s;
+  stroke:#9D1815;
+
+}
+
+path , polygon{
+  cursor: pointer;
+}
+
+.effet{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 29%;
+  -webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+/* description qui s'affiche au moment du hover sur la carte */
+.description {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+.cercle_info {
+  display: flex;
+  width: fit-content;
+  margin: 10px;
+}
+
+.info_sup p {
+margin: 0;
+}
+.info_sup h3 {
+margin: 0;
+margin-bottom: 5px;
+font-size: 2rem;
+color: var(--Lerouge);
+}
+.cercle {
+  border: solid var(--Lerouge);
+  border-width: 1.2vw;
+  border-radius: 100%;
+  width: 10vw;
+  height: 10vw;
+  max-width: 110px;
+  max-height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--Lerouge);
+  margin-right: 10px;
+}
+
+.mini_cercle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: solid 3px var(--Lerouge);
+  border-radius: 100%;
+  pointer-events: none;
+  display: none;
+}
+.trait {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+}
+.container {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.jauge {
+  width: 20px;
+  border-radius: 10px;
+  background: rgb(31,87,102);
+background: linear-gradient(0deg, rgba(31,87,102,1) 0%, rgba(173,245,235,1) 100%);
+margin-right: 10px;
+}
+.container_jauge {
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 80%;
+  width: fit-content;
+}
+.chiffres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--Lerouge);
+}
+
+
+.select_annee{
+  font-size: 1.2rem;
+  background-color:#1F5766;
+  font-family: "Poppins";
+   width: 20%;
+   border-radius: 10px;
+   text-align: center;
+   color: white;
+}
+
+
+/* FIN CARTE  */
+
+/* GRAPHIQUE */
+.graph {
+height: 90vh;
+background-color: #1F5766;
+/* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(31,87,102,1) 0%, rgba(31,87,102,1) 75%, rgba(0,0,0,1) 94%); */
+}
+.graph p {
+  font-family: 'poppins', sans-serif;
+}
+
+.graph h2{
+  color: aliceblue;
+  width: 90%;
+  margin: auto;
+  
+}
+.boutons {
+  margin-bottom: 20px;
+}
+.graphiqueboutons p {
+  color: white;
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+
+.graphiqueinfo {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.graphiqueinfo p {
+  margin: auto;
+}
+
+
+
+.graphiqueboutons {
+  width: 100%;
+  margin-right: 50px;
+}
+.choi_drogue{
+   text-align:center;
+   background-color: rgba(0, 0, 0, 0.445);
+   color: white;
+   padding: 10px;
+   margin: 10px;
+   border: none;
+   border-radius: 5px;
+   font-family: "poppins", sans-serif;
+   cursor: pointer;
+  }
+
+  .graph input[type="button"]:hover{
+    background-color:#9D1815;
+  }
+
+  .graph input[type="button"]:hover::after{
+    background-color:#9D1815;
+  }
+
+.info {
+  width: 100%;
+  margin: auto;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+ border-left: solid 1px #ebf3f3;
+ padding-left: 30px;
+  position: relative;
+  height: 90vh;
+    top: -52px;
+    overflow: auto;
+    /* background-color: #0e0e0e7a; */
+}
+/*code copié sur internet*/
+.info {
+  overflow: auto;
+  scrollbar-width: thin; /* Pour Firefox */
+  scrollbar-color: white; /* Pour Firefox */
+}
+
+.info::-webkit-scrollbar {
+  width: 5px; /* Pour Chrome, Safari, et Opera */
+}
+
+.info::-webkit-scrollbar-thumb {
+  background-color: white; /* Couleur de la poignée */
+}
+
+.info::-webkit-scrollbar-track {
+  background-color: transparent; /* Couleur de la piste */
+}
+/*fin code de internet*/
+.info img {
+width: 100%;
+height: 200px;
+filter: grayscale(100%);
+object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+
+}
+
+
+.invisible {
+  display: none;
+}
+.visible {
+  display: block;
+ 
+}
+.info p {
+  margin: 0;
+  margin-top: 10px;
+  width: 95%;
+}
+.info h3{
+  font-family: 'Odibee Sans', sans-serif;
+  font-size: 2.5rem;
+  border-bottom: solid 1px white;
+  margin: 0;
+}
+.aide {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  /* border: solid 1px white; */
+  position: relative;
+  margin-top: auto;
+}
+strong {
+  background-color: white;
+  color: var(--Lerouge);
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  max-height: 38px;
+}
+.aide img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+}
+
+/*animation de la courbe*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.line {
+  animation: fadeIn 1.2s ease;
+}
+
+/* Media queries */
+
+  
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 90%;
+  }
+
+  .modal__content {
+    max-width: 100%;
+    padding: 1em;
+    margin-top: 10%; 
+  }
+}
+
+@media screen and (max-width: 1198px) {
+  .info {
+    width: 100%;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+   min-width: 150px;
+    
+  }
+  .info img {
+    max-width: 200px;
+    float: right;
+    border-radius: 10px;
+  }
+  .graphique {
+    width: 55vw;
+  }
+  .aide {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1236px) {
+  .info {
+    width: 100%;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+   
+    
+  }
+  .info img {
+   display: none;
+  }
+  .aide img {
+display: block;
+  }
+
+
+}
+
