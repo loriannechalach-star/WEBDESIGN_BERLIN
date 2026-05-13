@@ -7,6 +7,7 @@ This website constitutes a work of the mind within the meaning of the Intellectu
 # Contributors
 Loriane Chalach
 Lucas Damour
-
+Phalguni Joshi
+Anna Yekulvia
 # Link of the website
 https://loaxn.github.io/Overdose-Watch/
